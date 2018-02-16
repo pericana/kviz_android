@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.math.kviz.IgrajKvizActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pozadina"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:background="#ffff00"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"
+        android:id="@+id/vrijemeIKuglice">
+
+        <ProgressBar
+            android:layout_marginLeft="5dp"
+            android:id="@+id/progressVrijeme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progressbar"
+            android:progress="0"
+            android:max="100"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:id="@+id/vrijemeTV"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llZaKuglice"
+            android:orientation="vertical"></LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/vrijemeIKuglice">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/odgovoriArea"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/pitanjeArea">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="17sp"
+                android:background="@drawable/pitanje_pozadina"
+                android:id="@+id/pitanjeTV"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:alpha="0.8"
+                android:id="@+id/kategorijaSlika"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#ffffff"
+            android:layout_above="@+id/odgovoriArea"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/odgovoriArea"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/odgovori"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:id="@+id/odgovorA"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/odgovori"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:id="@+id/odgovorB"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/odgovori"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:id="@+id/odgovorC"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/odgovori"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:id="@+id/odgovorD"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

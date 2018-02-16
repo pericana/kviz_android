@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.math.kviz.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pozadina"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_above="@+id/slikeKategorija"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#99ffffff"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Izaberi kategorije:"
+                android:padding="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llZaKetegorije"></LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999999" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/slikeKategorija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/sport"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/sport_on"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginBottom="35dp"
+            android:id="@+id/umjetnost"
+            android:layout_toRightOf="@id/sport"
+            android:src="@drawable/umjetnost_on"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/povijest"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/umjetnost"
+            android:src="@drawable/povijest_on"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/geografija"
+            android:src="@drawable/geografija_on"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/knjizevnost"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="-15dp"
+            android:layout_toLeftOf="@id/znanosti"
+            android:src="@drawable/knjizevnost_on"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/znanosti"
+            android:layout_marginRight="-15dp"
+            android:layout_toLeftOf="@id/krscanstvo"
+            android:src="@drawable/znanost_on"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/krscanstvo"
+            android:src="@drawable/krscanstvo_on"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

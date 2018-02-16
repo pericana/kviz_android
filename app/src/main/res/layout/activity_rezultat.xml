@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.math.kviz.BirajRazinuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pozadina"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/prvaZvjezdicaOff"
+                    android:src="@drawable/zvjezdica_off"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/prvaZvjezdicaOn"
+                    android:visibility="invisible"
+                    android:src="@drawable/zvjezdica_on"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/drugaZvjezdicaOff"
+                    android:src="@drawable/zvjezdica_off"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/drugaZvjezdicaOn"
+                    android:visibility="invisible"
+                    android:src="@drawable/zvjezdica_on"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/trecaZvjezdicaOff"
+                    android:src="@drawable/zvjezdica_off"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/trecaZvjezdicaOn"
+                    android:visibility="invisible"
+                    android:src="@drawable/zvjezdica_on"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/nazad"
+                android:id="@+id/razineButton"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:background="#00000000"/>
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="120dp"
+                android:id="@+id/daljeButton"
+                android:src="@drawable/start"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                android:background="#00000000"/>
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="120dp"
+                android:id="@+id/ponovnoButton"
+                android:src="@drawable/ponovno"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:background="#00000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
